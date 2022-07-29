@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- Link Swiper's CSS -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+		/>
+		<link rel="stylesheet" href="carousel.css" />
+		<title>Document</title>
+		<style>
+			
+		</style>
+	</head>
+	<body>
+		<div class="carousel mySwiper">
+			<div class="wrapper swiper-wrapper">
+				<div class="slice swiper-slide">
+					<img src="maria.jpg" alt="user photo" />
+					<blockquote class="testimonial">
+						<p class="testimonial-text">
+							"Lorem ipsum dolor, sit amet consectetur adipisicing
+							elit. Sed earum quisquam, dolores eum exercitationem
+							itaque ex soluta dicta nam, molestiae tempora,
+							inventore veritatis! A tempore nobis dolores, natus
+							voluptates cupiditate!"
+						</p>
+						<p class="testimonial-author">Maria Almeida</p>
+						<p class="testimonial-job">
+							Senior Product Manager at Pink Blossom
+						</p>
+					</blockquote>
+				</div>
+				<div class="slice slice-2 swiper-slide">
+					<img src="maria.jpg" alt="user photo" />
+					<blockquote class="testimonial">
+						<p class="testimonial-text">
+							"Lorem ipsum dolor, sit amet consectetur adipisicing
+							elit. Sed earum quisquam, dolores eum exercitationem
+							itaque ex soluta dicta nam, molestiae tempora,
+							inventore veritatis! A tempore nobis dolores, natus
+							voluptates cupiditate!"
+						</p>
+						<p class="testimonial-author">Maria Almeida</p>
+						<p class="testimonial-job">
+							Senior Product Manager at Pink Blossom
+						</p>
+					</blockquote>
+				</div>
+				<div class="slice slice-3 swiper-slide">
+					<img src="maria.jpg" alt="user photo" />
+					<blockquote class="testimonial">
+						<p class="testimonial-text">
+							"Lorem ipsum dolor, sit amet consectetur adipisicing
+							elit. Sed earum quisquam, dolores eum exercitationem
+							itaque ex soluta dicta nam, molestiae tempora,
+							inventore veritatis! A tempore nobis dolores, natus
+							voluptates cupiditate!"
+						</p>
+						<p class="testimonial-author">Maria Almeida</p>
+						<p class="testimonial-job">
+							Senior Product Manager at Pink Blossom
+						</p>
+					</blockquote>
+				</div>
+			</div>
+			<button class="swiper-button-prev btn btn--left">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					class="btn-icon"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke="currentColor"
+					stroke-width="2"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M15 19l-7-7 7-7"
+					/>
+				</svg>
+			</button>
+			<button class="swiper-button-next btn btn--right">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					class="btn-icon"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke="currentColor"
+					stroke-width="2"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M9 5l7 7-7 7"
+					/>
+				</svg>
+			</button>
+			<div class="swiper-pagination"></div>
+			<!-- <div class="dots">
+				<button class="dot dot-active">&nbsp;</button>
+				<button class="dot">&nbsp;</button>
+				<button class="dot">&nbsp;</button>
+				<button class="dot">&nbsp;</button>
+			</div> -->
+		</div>
+		<!-- Swiper JS -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+		<!-- Initialize Swiper -->
+		<script>
+			var swiper = new Swiper(".mySwiper", {
+				slidesPerView: 1,
+				spaceBetween: 100,
+				loop: true,
+				pagination: {
+					el: ".swiper-pagination",
+					clickable: true,
+				},
+				navigation: {
+					nextEl: ".swiper-button-next",
+					prevEl: ".swiper-button-prev",
+				},
+			});
+		</script>
+	</body>
+</html>
